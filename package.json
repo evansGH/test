@@ -2,7 +2,7 @@
   "name": "Hockey-Lemieux-Performances",
   "title": "Hockey Lemieux Performances",
   "version": "0.0.0",
-  "homepage": "http://startbootstrap.com/template-overviews/grayscale",
+  "homepage": "https://evansgh.github.io/test/",
   "author": "Evans G",
   "devDependencies": {
     "bootstrap": "^3.3.7",
@@ -19,6 +19,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+    "url": "https://github.com/evansGH/test.git"
   }
 }
