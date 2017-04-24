@@ -104,10 +104,13 @@
   .pipe(gulp.dest('docs/css'))
 
   gulp.src(['js/*.min.js',
-  'vendor/jquery/jquery.js',
+  'vendor/jquery/jquery.min.js',
   'vendor/bootstrap/js/bootstrap.min.js'
   ])
   .pipe(gulp.dest('docs/js'))
+
+  gulp.src(['vendor/font-awesome/fonts/**/*'])
+  .pipe(gulp.dest('docs/fonts'))
 
   gulp.src(['index.html'])
   .pipe(gulp.dest('docs/'))
