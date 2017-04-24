@@ -97,14 +97,17 @@ gulp.task('copy-to-docs', function() {
   gulp.src(['img/**/*'])
   .pipe(gulp.dest('docs/img'))
 
-  gulp.src(['css/*.min.css'])
-  .pipe(gulp.dest('docs/css'))
+  gulp.src(['css/*.min.css',
+  'vendor/bootstrap/css/bootstrap.min.css',
+  'vendor/font-awesome/css/font-awesome.min.css'
+])
+.pipe(gulp.dest('docs/css'))
 
-  gulp.src(['js/*.min.js'])
-  .pipe(gulp.dest('docs/js'))
+gulp.src(['js/*.min.js'])
+.pipe(gulp.dest('docs/js'))
 
-  gulp.src(['index.html'])
-  .pipe(gulp.dest('docs/'))
+gulp.src(['index.html'])
+.pipe(gulp.dest('docs/'))
 })
 
 // Push build to gh-pages
