@@ -93,18 +93,18 @@ gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() 
 });
 
 // Copy files to be published
-gulp.task('copy-to-dist', function() {
+gulp.task('copy-to-docs', function() {
   gulp.src(['img/**/*'])
-  .pipe(gulp.dest('dist/img'))
+  .pipe(gulp.dest('docs/img'))
 
   gulp.src(['css/*.min.css'])
-  .pipe(gulp.dest('dist/css'))
+  .pipe(gulp.dest('docs/css'))
 
   gulp.src(['js/*.min.js'])
-  .pipe(gulp.dest('dist/js'))
-  
+  .pipe(gulp.dest('docs/js'))
+
   gulp.src(['index.html'])
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest('docs/'))
 })
 
 // Push build to gh-pages
